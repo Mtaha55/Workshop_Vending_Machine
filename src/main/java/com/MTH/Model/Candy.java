@@ -3,8 +3,8 @@ package com.MTH.Model;
 public class Candy extends Product {
     private String flavor;
 
-    public Candy(int id, double price, String productName, String flavor) {
-        super(id, price, productName);
+    public Candy(double price, double v, String productName, String flavor) {
+        super(price, productName);
         this.flavor = flavor;
     }
 
@@ -18,7 +18,7 @@ public class Candy extends Product {
 
     @Override
     public String examine() {
-        return "Candy: " + getProductName() + ", Flavor: " + flavor + ", Price: $" + getPrice();
+        return "Id - " + getId() +"Candy: " + getProductName() + ", Flavor: " + flavor + ", Price: $" + getPrice();
     }
 
     @Override

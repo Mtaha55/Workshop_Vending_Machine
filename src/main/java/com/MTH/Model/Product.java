@@ -4,12 +4,14 @@ package com.MTH.Model;
 
 
 public abstract class Product {
-    private int id;
+    private static int sequence = 0;
+    private final int id;
     private double price;
     private String productName;
 
-    public Product(int id, double price, String productName) {
-        this.id = id;
+    public Product(double price, String productName) {
+
+        id= ++sequence;
         this.price = price;
         this.productName = productName;
     }
@@ -18,9 +20,7 @@ public abstract class Product {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+
 
     public double getPrice() {
         return price;
