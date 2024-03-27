@@ -6,8 +6,8 @@ import com.MTH.Model.Snack;
 public class VendingMachineApp {
     public static void main(String[] args) {
         // Creating instances of different products
-        Candy candy = new Candy(1, 1.5, "Chocolate Bar", "Milk Chocolate");
-        Snack snack = new Snack(2, 2.0, "Potato Chips", 150);
+        Candy candy = new Candy(1.5, "Chocolate Bar", "Milk Chocolate");
+        Snack snack = new Snack( 2.0, "Potato Chips", 150);
 
 
         // Examining products
