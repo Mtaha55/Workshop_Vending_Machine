@@ -3,7 +3,7 @@ package com.MTH.Model;
 public class Candy extends Product {
     private String flavor;
 
-    public Candy(double price, String productName, String flavor) {
+    public Candy(double price, double v, String productName, String flavor) {
         super(price, productName);
         this.flavor = flavor;
     }

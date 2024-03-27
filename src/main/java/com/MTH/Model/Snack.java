@@ -4,7 +4,7 @@ package com.MTH.Model;
 public class Snack extends Product {
     private int calories;
 
-    public Snack(double price, String productName, int calories) {
+    public Snack(double price, String productName, double v, int calories) {
         super(price, productName);
         this.calories = calories;
     }

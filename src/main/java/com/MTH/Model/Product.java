@@ -5,7 +5,7 @@ package com.MTH.Model;
 
 public abstract class Product {
     private static int sequence = 0;
-    private int id;
+    private final int id;
     private double price;
     private String productName;
 
