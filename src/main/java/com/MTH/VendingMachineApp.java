@@ -11,7 +11,7 @@ public class VendingMachineApp {
     public static void main(String[] args) {
         // Create instances of products
         Candy candy = new Candy(1, 1.5, "Chocolate Bar", "Milk Chocolate");
-        Snack snack = new Snack(2, "Potato Chips", 2.0, 150); // Corrected order of parameters
+        Snack snack = new Snack(2, 2.0, "Potato Chips", 150); // Corrected order of parameters
         Drink drink = new Drink(3, 1.0, "Soda", "Coca-Cola");
 
         // Create an array of products
@@ -22,7 +22,7 @@ public class VendingMachineApp {
 
         // Interact with the vending machine
         vendingMachine.addCurrency(15);
-        System.out.println("Current balance: Skr" + vendingMachine.getBalance());
+        System.out.println("Current balance: $" + vendingMachine.getBalance());
 
         String[] productNames = vendingMachine.getProduct();
         System.out.println("Available products:");
@@ -33,6 +33,6 @@ public class VendingMachineApp {
         System.out.println("Description of product with ID 2: " + vendingMachine.getDescription(2));
 
         int change = vendingMachine.endSession();
-        System.out.println("Returned change: Skr" + change);
+        System.out.println("Returned change: $" + change);
     }
 }
